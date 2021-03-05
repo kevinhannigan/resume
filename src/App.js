@@ -35,7 +35,7 @@ function App() {
       </div>
       <hr></hr>
       <div className='resume-section-header'>
-        <h2>Experience</h2>
+        <h2>Experience </h2>
         {expList.map(exp => (
           <ExperienceSection experience={exp} />))}
       </div>
