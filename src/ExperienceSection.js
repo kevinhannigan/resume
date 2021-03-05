@@ -10,11 +10,17 @@ const ExperienceSection = ({ experience }) => {
     return (
         <div>
             <div className='experience-header'>
-                <p>{experience.company} | {experience.location}</p></div>
-            <p>{experience.title} | {experience.dates}</p>
+                <div className='experience-left'>
+                    {experience.company} | {experience.location}
+                </div>
+                <div className='experience-right'>
+                    {experience.title} | {experience.dates}
+                </div>
+            </div><br></br>
+            
             <ul>
-            {responsilities.map(resp => (
-                <li>{resp}</li> ))}
+                {responsilities.map(resp => (
+                    <li>{resp}</li>))}
             </ul>
         </div>
     )
