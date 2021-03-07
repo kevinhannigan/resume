@@ -17,10 +17,14 @@ div.resume {
 
 div.experience-header {
   font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
 }
 
 div.education-header {
   font-weight: bold;
+  font-size: 14px;
+  font-style: italic;
 }
 
 div.name-header {

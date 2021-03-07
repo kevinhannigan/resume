@@ -1,6 +1,4 @@
-import experience from './configs/experience'
-import education from './configs/education'
-import skills from './configs/skills'
+import fullConfig from './configs/fullConfig'
 import ExperienceSection from './ExperienceSection';
 import EducationSection from './EducationSection';
 import SkillsSection from './SkillsSection';
@@ -9,12 +7,14 @@ import ProjectsSection from './ProjectsSection';
 import InterestsSection from './InterestsSection';
 // import headshot from './images/headshot.jpg'
 
-const expList = experience
-const eduList = education
-const skillList = skills.skills
-const certList = skills.certifications
-const projList = skills.projects
-const intList = skills.interests
+const expList = fullConfig.experience
+const eduList = fullConfig.education
+const skillList = fullConfig.skills
+const certList = fullConfig.certifications
+const projList = fullConfig.projects
+const intList = fullConfig.interests
+
+
 
 console.log(expList);
 
@@ -23,10 +23,10 @@ function App() {
     <div className='resume'>
       <div className='name-header'>
       {/* <img src={headshot} alt="profile" className="profile-pic" /> */}
-        <h2>Kevin T. Hannigan</h2>
+        <h2>{fullConfig.name}</h2>
       </div>
       <div className='contact-header'>
-        <p>khannigan94@gmail.com | 262.573.2242 | Chicago, IL </p>
+        <p> {fullConfig.email} | {fullConfig.phone} | {fullConfig.location} </p>
       </div>
       <div className='resume-section-header'>
         <h2>Education</h2>
